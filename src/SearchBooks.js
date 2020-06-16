@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SearchBooksInput from './SearchBooksInput';
-import SearchResult from './SearchResult';
+import SearchBooksResult from './SearchBooksResult';
 
 class SearchBooks extends Component {
   render() {
@@ -18,7 +18,7 @@ class SearchBooks extends Component {
                 </Link>
                 <SearchBooksInput onSearch={onSearch} />
             </div>        
-            <SearchResult books={books} searchBooks={searchBooks} onMove={onMove}/>
+            <SearchBooksResult books={books} searchBooks={searchBooks} onMove={onMove}/>
         </div>
     );
   }

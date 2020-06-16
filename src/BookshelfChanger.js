@@ -7,8 +7,9 @@ class BookshelfChanger extends Component {
   
   handleChange = event => {
     const { value } = event.target;
+    const { onMove, book } = this.props;
     this.setState({ value });
-    this.props.onMove(this.props.book, value);
+    onMove(book, value);
   };
 
   render() {
