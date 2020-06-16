@@ -15,7 +15,7 @@ class BooksApp extends Component {
   state = {
     books: [],
     searchBooks: [],
-    error: false
+    error: false,
   };
 
   moveBook = (book, shelf) => {
